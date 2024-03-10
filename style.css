@@ -90,5 +90,8 @@ main{
     width: 328px;
     position: fix;
 }
-
+footer{
+    background: #0A3871;
+    height: 30px;
+}
 
