@@ -6,6 +6,10 @@
     line-height: 150%;
 }
 
+header {
+    background-color: #0A3871;
+}
+
 .logo{
     padding: 10px;
     margin-left: 10px;
@@ -21,7 +25,7 @@ main{
 .text-area{
     border: none;
     color: #0A3871;
-    margin-top: 90px;
+    margin-top: 40px;
     text-transform: lowercase;
 }
 .text-area:focus{
@@ -63,7 +67,23 @@ main{
     height: 67px;
     margin-left: 30px;  
     width: 328px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
 }
+
+.btn-desencriptador:hover, .btn-desencriptador:focus, .btn-desencriptador:active {
+    background-color: #7b909a;
+    color: white;
+}
+
 
 .btn-encriptador{
     background: #0A3871;
@@ -72,26 +92,69 @@ main{
     color: white;
     cursor: pointer;
     height: 67px;  
-    width: 328px;
+    width: 328px; 
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+.btn-encriptador:hover, .btn-encriptador:focus, .btn-encriptador:active {
+    background-color: #7b909a;
+    color: white;
 }
 
 .informacion{
     font-style: italic;
     font-size: 18px;
+    display:inline;
 }
 
-.copiar{
+.copiar {
+    display: none; /* Inicialmente oculto */
+    margin-left: 94px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fix;
     background: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: white;
     cursor: pointer;
     height: 67px;  
-    width: 328px;
-    position: fix;
-}
-footer{
-    background: #0A3871;
-    height: 30px;
+    width: 320px;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
 }
 
+.copiar:hover, .copiar:focus, .copiar:active {
+    background-color: #7b909a;
+    color: white;
+    }
+
+footer {
+    background-color: #0A3871;
+    height: 40px;
+    padding: 15px;
+}
+
+.copyright {
+    background-color: #0A3871;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    color: white;
+}

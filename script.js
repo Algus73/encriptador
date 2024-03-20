@@ -12,6 +12,7 @@ function btnEncriptar(){
     mensaje.value = textoEncriptado
     textArea.value = "";
     mensaje.style.backgroundImage = "none"
+    showCopyButton();
 }
 
 function encriptar(stringEncriptada){
@@ -32,6 +33,7 @@ function btnDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value)
     mensaje.value = textoEncriptado
     textArea.value = "";
+    showCopyButton();
 }
 
 function desencriptar(stringDesencriptada){
@@ -41,9 +43,7 @@ function desencriptar(stringDesencriptada){
     for(let i = 0; i < matrizCodigo.length; i++){
         if(stringDesencriptada.includes(matrizCodigo[i][1])){
             stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1] , matrizCodigo[i][0])
-
         }
-
     }
     return stringDesencriptada
 }
@@ -53,4 +53,10 @@ function copiar(){
     navigator.clipboard.writeText(mensaje.value)
     mensaje.value = "";
     alert("Texto Copiado")
+}
+
+// Función para mostrar el botón de copiar
+function showCopyButton() {
+    var copyButton = document.querySelector(".copiar");
+    copyButton.style.display = "inline-block";
 }
